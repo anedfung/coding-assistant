@@ -1,0 +1,13 @@
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\api\ApiExceptionHandler.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\api\ChatController.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\api\Dtos.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\chat\ChatService.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\config\AssistantProperties.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\config\LocalOnlyFilter.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\config\LoopbackGuard.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\config\WebConfig.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\LocalAssistantApplication.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\ollama\OllamaClient.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\ollama\OllamaException.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\scan\GitignoreRules.java
+C:\Users\anfung\Downloads\code-assistant (1)\code-assistant\backend\src\main\java\com\localassistant\scan\ProjectScanner.java

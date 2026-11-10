@@ -1,0 +1,43 @@
+server:
+  # Solo accesible desde esta máquina. No cambiar a 0.0.0.0.
+  address: 127.0.0.1
+  port: 8080
+
+spring:
+  application:
+    name: local-code-assistant
+  main:
+    banner-mode: "off"
+  mvc:
+    async:
+      request-timeout: 15m
+
+assistant:
+  ollama:
+    # Debe ser loopback; si no, la aplicación se niega a arrancar.
+    base-url: http://127.0.0.1:11434
+    model: qwen2.5-coder:7b
+    # Ventana de contexto en tokens. Ollama usa un valor bajo por defecto y recorta en silencio:
+    # por eso se fija aquí. Súbela (p. ej. 32768) solo si tienes RAM/VRAM de sobra.
+    num-ctx: 16384
+    temperature: 0.2
+  context:
+    # Caracteres de código que se envían al modelo en cada pregunta (~3-4 caracteres por token).
+    # Regla práctica: max-chars ≈ num-ctx * 1.7 deja espacio para historial y respuesta.
+    max-chars: 50000000
+    max-history-messages: 16
+  scan:
+    # Si se define, solo se pueden escanear rutas dentro de estas carpetas. Ejemplo:
+    # allowed-roots:
+    #   - C:/Users/tu-usuario/proyectos
+    max-files: 400
+    max-file-kb: 256
+    max-file-chars: 16000
+    # Respeta los .gitignore del proyecto (raíz y subcarpetas), además de ignorar node_modules, target, etc.
+    respect-gitignore: true
+    # Tope de archivos que se revisan en cada escaneo; evita colgarse con carpetas enormes.
+    max-visited: 20000
+
+logging:
+  level:
+    root: INFO
